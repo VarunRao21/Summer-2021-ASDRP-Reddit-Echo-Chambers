@@ -30,6 +30,7 @@ for s in subreddits:
 
     print(people)
     plt.bar(people.keys(), people.values(), 0.8, color=['r','b'])
+    plt.title("Occurences of Political Figures in r/" + s)
     plt.savefig("C:/Users/varun/Python/Summer-2021-ASDRP-Reddit-Echo-Chambers/" + s + "Titles_people.png")
     plt.show()
     
