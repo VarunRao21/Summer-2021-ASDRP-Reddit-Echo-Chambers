@@ -32,7 +32,7 @@ def get_pushshift_data(data_type, **kwargs):
 dataFile = open("titleData.csv", "w", newline = "")
 dataWriter = csv.writer(dataFile)
 
-for j in range(0, 4720):
+for j in range(1, 4720):
 
     #Parameters
     afterDate = 4721 - j #4721 days ago was r/politics's 1 year birthday (we start analyzing after one year so we can get data for a properly grown community)
