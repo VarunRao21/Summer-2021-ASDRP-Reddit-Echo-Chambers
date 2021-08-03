@@ -84,7 +84,7 @@ for j in range(0, startDate - 1):
             commentMo = commentRegex.search(postStr)
             comment = commentMo.group(1)
             if comment == '[deleted]' or comment == '[removed]':
-                i = i - 1
+                i -= 1
                 continue
             dataWriter.writerow([j + 1, comment])
         except:
